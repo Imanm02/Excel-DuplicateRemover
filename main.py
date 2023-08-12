@@ -35,7 +35,7 @@ def apply_styles_to_excel(filename):
     wb.save(filename)
 
 # Load all sheets of the Excel file into a list of dataframes
-all_sheets = pd.read_excel("Micro.xlsx", sheet_name=None, dtype=str)
+all_sheets = pd.read_excel("input.xlsx", sheet_name=None, dtype=str)
 
 # Concatenate all the sheets into one dataframe
 full_df = pd.concat(all_sheets.values(), ignore_index=True)
